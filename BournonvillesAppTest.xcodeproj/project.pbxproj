@@ -12,6 +12,9 @@
 		C8CF37941CEE69B800705DD6 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C8CF37921CEE69B800705DD6 /* Main.storyboard */; };
 		C8CF37961CEE69B800705DD6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C8CF37951CEE69B800705DD6 /* Assets.xcassets */; };
 		C8CF37991CEE69B800705DD6 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C8CF37971CEE69B800705DD6 /* LaunchScreen.storyboard */; };
+		C8CF37A11CEE81E400705DD6 /* MenuTableTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8CF37A01CEE81E400705DD6 /* MenuTableTableViewController.swift */; };
+		C8CF37A31CEE821C00705DD6 /* ContainerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8CF37A21CEE821C00705DD6 /* ContainerViewController.swift */; };
+		C8CF37A51CEE822E00705DD6 /* MasterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8CF37A41CEE822E00705DD6 /* MasterViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +25,9 @@
 		C8CF37951CEE69B800705DD6 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C8CF37981CEE69B800705DD6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		C8CF379A1CEE69B800705DD6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C8CF37A01CEE81E400705DD6 /* MenuTableTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MenuTableTableViewController.swift; sourceTree = "<group>"; };
+		C8CF37A21CEE821C00705DD6 /* ContainerViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContainerViewController.swift; sourceTree = "<group>"; };
+		C8CF37A41CEE822E00705DD6 /* MasterViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MasterViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,6 +66,9 @@
 				C8CF37951CEE69B800705DD6 /* Assets.xcassets */,
 				C8CF37971CEE69B800705DD6 /* LaunchScreen.storyboard */,
 				C8CF379A1CEE69B800705DD6 /* Info.plist */,
+				C8CF37A01CEE81E400705DD6 /* MenuTableTableViewController.swift */,
+				C8CF37A21CEE821C00705DD6 /* ContainerViewController.swift */,
+				C8CF37A41CEE822E00705DD6 /* MasterViewController.swift */,
 			);
 			path = BournonvillesAppTest;
 			sourceTree = "<group>";
@@ -135,7 +144,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C8CF37A51CEE822E00705DD6 /* MasterViewController.swift in Sources */,
 				C8CF37911CEE69B800705DD6 /* ViewController.swift in Sources */,
+				C8CF37A11CEE81E400705DD6 /* MenuTableTableViewController.swift in Sources */,
+				C8CF37A31CEE821C00705DD6 /* ContainerViewController.swift in Sources */,
 				C8CF378F1CEE69B800705DD6 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
