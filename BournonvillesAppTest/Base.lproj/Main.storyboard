@@ -134,6 +134,10 @@
         <scene sceneID="bVt-Pe-Gtb">
             <objects>
                 <viewController restorationIdentifier="master" id="fMC-t9-KTJ" customClass="MasterViewController" customModule="BournonvillesAppTest" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Zto-zY-PfU"/>
+                        <viewControllerLayoutGuide type="bottom" id="7tP-CW-PwE"/>
+                    </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="BBm-pN-2xE">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="520"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>

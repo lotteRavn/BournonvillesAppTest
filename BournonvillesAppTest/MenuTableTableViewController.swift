@@ -10,11 +10,13 @@ import UIKit
 
 class MenuTableTableViewController: UITableViewController {
     
-    private let pages = ["Kontakt","Ring","Mail","Find os", "Cowboy Grill & Saloon","Åbningstider","A'la carte menu","bordbestilling","Eventkalender","Om Bournonville's Wild West","Historien om Bournonvilles", "Bournonvilles.dk","Forside"]
+    private let pages = ["Kontakt","Ring","Mail","Find os", "Cowboy Grill & Saloon","Åbningstider","A'la carte menu","Bordbestilling","Eventkalender","Om Bournonville's Wild West","Historien om Bournonvilles", "Bournonvilles.dk","Forside"]
     
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        tableView.backgroundView = UIImageView(image: UIImage(named: "webBaggrund_stretch"))
 
         // Uncomment the following line to preserve selection between presentations
         // self.clearsSelectionOnViewWillAppear = false
@@ -41,9 +43,19 @@ class MenuTableTableViewController: UITableViewController {
     }
     override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCellWithIdentifier("cell", forIndexPath: indexPath)
+        if indexPath.item % 2 == 0 {
+            cell.backgroundColor = UIColor.clearColor()
+        }else{
+            cell.backgroundColor = UIColor.whiteColor().colorWithAlphaComponent(0.2)
+            cell.textLabel?.backgroundColor = UIColor.whiteColor().colorWithAlphaComponent(0.0)
+        }
+        
         cell.textLabel?.text = pages[indexPath.row]
         
         return cell
+    }
+    override func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
+        navigationController?.viewControllers
     }
 
     
