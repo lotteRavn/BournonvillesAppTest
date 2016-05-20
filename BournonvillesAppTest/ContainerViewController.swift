@@ -32,19 +32,22 @@ class ContainerViewController: UIViewController {
     }
     
     @IBAction func menuTapped(sender: AnyObject) {
+        if rightConstraintTitleMenu.constant == 600 {
+        showMenu()
+        }else{
+        noShowMenu()
+        }
     }
     
     @IBAction func leftSwipe(sender: UISwipeGestureRecognizer) {
-        rightConstraintTop.constant = 600
-        rightConstraintTitleMenu.constant = 600
-        
-        UIView.animateWithDuration(0.3){
-        self.view.layoutIfNeeded()
-        }
-        
+        noShowMenu()
     }
 
     @IBAction func rightSwipe(sender: UISwipeGestureRecognizer) {
+        showMenu()
+        
+    }
+    func showMenu() {
         rightConstraintTop.constant = 0
         rightConstraintTitleMenu.constant = 0
         
@@ -52,5 +55,16 @@ class ContainerViewController: UIViewController {
             self.view.layoutIfNeeded()
         }
 
+    
+    }
+    func noShowMenu() {
+        rightConstraintTop.constant = 600
+        rightConstraintTitleMenu.constant = 600
+        
+        UIView.animateWithDuration(0.3){
+            self.view.layoutIfNeeded()
+        }
+
+    
     }
 }
