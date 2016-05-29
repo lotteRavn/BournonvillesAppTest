@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		C81879341CF5A106001C8201 /* MenuCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C81879331CF5A106001C8201 /* MenuCell.swift */; };
 		C8CF378F1CEE69B800705DD6 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8CF378E1CEE69B800705DD6 /* AppDelegate.swift */; };
 		C8CF37911CEE69B800705DD6 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8CF37901CEE69B800705DD6 /* ViewController.swift */; };
 		C8CF37941CEE69B800705DD6 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C8CF37921CEE69B800705DD6 /* Main.storyboard */; };
@@ -15,9 +16,12 @@
 		C8CF37A11CEE81E400705DD6 /* MenuTableTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8CF37A01CEE81E400705DD6 /* MenuTableTableViewController.swift */; };
 		C8CF37A31CEE821C00705DD6 /* ContainerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8CF37A21CEE821C00705DD6 /* ContainerViewController.swift */; };
 		C8CF37A51CEE822E00705DD6 /* MasterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8CF37A41CEE822E00705DD6 /* MasterViewController.swift */; };
+		C8D296921CF82B42003134F0 /* FrontPagesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8D296911CF82B42003134F0 /* FrontPagesViewController.swift */; };
+		C8D296BA1CF86AE3003134F0 /* Pages.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8D296B91CF86AE3003134F0 /* Pages.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		C81879331CF5A106001C8201 /* MenuCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MenuCell.swift; sourceTree = "<group>"; };
 		C8CF378B1CEE69B800705DD6 /* BournonvillesAppTest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BournonvillesAppTest.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C8CF378E1CEE69B800705DD6 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C8CF37901CEE69B800705DD6 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -28,6 +32,8 @@
 		C8CF37A01CEE81E400705DD6 /* MenuTableTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MenuTableTableViewController.swift; sourceTree = "<group>"; };
 		C8CF37A21CEE821C00705DD6 /* ContainerViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContainerViewController.swift; sourceTree = "<group>"; };
 		C8CF37A41CEE822E00705DD6 /* MasterViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MasterViewController.swift; sourceTree = "<group>"; };
+		C8D296911CF82B42003134F0 /* FrontPagesViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FrontPagesViewController.swift; sourceTree = "<group>"; };
+		C8D296B91CF86AE3003134F0 /* Pages.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Pages.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,12 +69,15 @@
 				C8CF378E1CEE69B800705DD6 /* AppDelegate.swift */,
 				C8CF37901CEE69B800705DD6 /* ViewController.swift */,
 				C8CF37921CEE69B800705DD6 /* Main.storyboard */,
+				C8D296B91CF86AE3003134F0 /* Pages.swift */,
+				C8D296911CF82B42003134F0 /* FrontPagesViewController.swift */,
 				C8CF37951CEE69B800705DD6 /* Assets.xcassets */,
 				C8CF37971CEE69B800705DD6 /* LaunchScreen.storyboard */,
 				C8CF379A1CEE69B800705DD6 /* Info.plist */,
 				C8CF37A01CEE81E400705DD6 /* MenuTableTableViewController.swift */,
 				C8CF37A21CEE821C00705DD6 /* ContainerViewController.swift */,
 				C8CF37A41CEE822E00705DD6 /* MasterViewController.swift */,
+				C81879331CF5A106001C8201 /* MenuCell.swift */,
 			);
 			path = BournonvillesAppTest;
 			sourceTree = "<group>";
@@ -145,9 +154,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				C8CF37A51CEE822E00705DD6 /* MasterViewController.swift in Sources */,
+				C8D296921CF82B42003134F0 /* FrontPagesViewController.swift in Sources */,
 				C8CF37911CEE69B800705DD6 /* ViewController.swift in Sources */,
+				C81879341CF5A106001C8201 /* MenuCell.swift in Sources */,
 				C8CF37A11CEE81E400705DD6 /* MenuTableTableViewController.swift in Sources */,
 				C8CF37A31CEE821C00705DD6 /* ContainerViewController.swift in Sources */,
+				C8D296BA1CF86AE3003134F0 /* Pages.swift in Sources */,
 				C8CF378F1CEE69B800705DD6 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -300,6 +312,7 @@
 				C8CF379F1CEE69B800705DD6 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

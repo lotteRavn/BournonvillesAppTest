@@ -10,11 +10,20 @@ import UIKit
 
 class MenuTableTableViewController: UITableViewController {
     
+   var pageCollection = [Pages]()
+    var identities = [String]()
+    
     private let pages = ["Kontakt","Ring","Mail","Find os", "Cowboy Grill & Saloon","Åbningstider","A'la carte menu","Bordbestilling","Eventkalender","Om Bournonville's Wild West","Historien om Bournonvilles", "Bournonvilles.dk","Forside"]
+    
     
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        identities = ["A", "B"]
+        for p in pages {
+            
+            pageCollection.append(Pages(pageName: p))
+        }
         
         tableView.backgroundView = UIImageView(image: UIImage(named: "webBaggrund_stretch"))
 
@@ -39,26 +48,30 @@ class MenuTableTableViewController: UITableViewController {
 
     override func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         // #warning Incomplete implementation, return the number of rows
-        return pages.count
+        return pageCollection.count
     }
     override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCellWithIdentifier("cell", forIndexPath: indexPath)
-        if indexPath.item % 2 == 0 {
+        let cell = tableView.dequeueReusableCellWithIdentifier("menuCell", forIndexPath: indexPath)
+        //if indexPath.item % 2 == 0 {
             cell.backgroundColor = UIColor.clearColor()
-        }else{
+        /*}else{
             cell.backgroundColor = UIColor.whiteColor().colorWithAlphaComponent(0.2)
             cell.textLabel?.backgroundColor = UIColor.whiteColor().colorWithAlphaComponent(0.0)
-        }
-        
-        cell.textLabel?.text = pages[indexPath.row]
-        
+        }*/
+        let convertPages = pageCollection[indexPath.row]
+        cell.textLabel?.text = convertPages.pageName
         return cell
     }
-    override func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
-        navigationController?.viewControllers
-    }
-
     
-
-   
+    /*override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
+        var indexPath: NSIndexPath = self.tableView.indexPathForSelectedRow!
+        var destinationVC = segue.destinationViewController as! FrontPagesViewController
+    }*/
+    
+    override func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
+        let vcName =  identities[indexPath.row]
+        let viewController = storyboard?.instantiateViewControllerWithIdentifier(vcName)
+        self.navigationController?.pushViewController(viewController!, animated: true)
+        
+    }
 }
